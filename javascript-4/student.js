@@ -5,7 +5,9 @@
 // Create a new array called 'faveColors' and set it your three favorite colors as strings.
 
 // CODE HERE
-let faveColors = ['blue', 'red', 'green']
+let faveColors = ['blue', 'red', 'green'];
+
+
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstname, superHeroName, homeTown, superPowers, superPowerXP, profileImage. 
 
@@ -23,14 +25,15 @@ let faveColors = ['blue', 'red', 'green']
 
 // CODE HERE
 let me = {
-    firstName: 'Tyler',
-    superHeroName: 'FlyBoy Flynn',
-    homeTown: 'Alpine',
-    superPowers: ['flying', 'taming horses', 'taming flying horses'],
-    superPowerXP(){
-        return Math.floor(Math.random() * 100) + 1 
-    },
-    profileImage: `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
+  firstName: 'Tyler',
+  superHeroName: 'FlyBoy Flynn',
+  homeTown: 'Alpine',
+  superPowers: ['flying', 'taming horses', 'taming flying horses'],
+  superPowerXP(){
+      return Math.floor(Math.random() * 100) + 1 
+  },
+  profileImage(){ return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
+}
 }
 
 
@@ -51,22 +54,21 @@ let homeTown = me.homeTown;
 
 // CODE HERE
 function setColor(arr){
-    arr = arr.splice(0,3)
-  for(let i = 0; i < arr.length; i++){
-    if(arr[i] === 'blue'){
-      arr[i] = '#4D4FF'
-    console.log(arr[i])
-    }return arr
-  }background(arr[0], arr[1], arr[2])
- }
+  arr = arr.splice(0,3)
+for(let i = 0; i < arr.length; i++){
+  if(arr[i] === 'blue'){
+    arr[i] = '#4D4DFF'
+  }
+}background(arr[0], arr[1], arr[2])
+}
 //////////////////Step 5////////////////////
 //Create a function called 'setPowers' that takes in arr as a parameter. Loop over the arr param and run a function called createLi(), which will take each item of the array as an agument. The createLi function is a function we created to set the data on the screen. It outside the scope of this project
 
 // CODE HERE
 function setPowers(arr){
-    for(let i = 0; i < arr.length; i++){
-        createLi(arr[i])
-    }
+  for(let i = 0; i < arr.length; i++){
+      createLi(arr[i])
+  }
 }
 
 //////////////////Step 6////////////////////
@@ -76,5 +78,6 @@ function setPowers(arr){
 function redactInfo(obj){
    for(let key in obj){
        obj[key] = 'redacted';
+       console.log(obj[key])
    }redacted();
 }
