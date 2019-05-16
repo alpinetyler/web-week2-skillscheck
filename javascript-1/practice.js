@@ -168,8 +168,8 @@ myNumbers.forEach(function(element, index){
 const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
 // Code Here
-const fortheLoveOfGeorge = notGeorge.map(function(element){
-	return element = 'George'
+const forTheLoveOfGeorge = notGeorge.map(function(element){
+	return element = 'George';
 })
 
 
