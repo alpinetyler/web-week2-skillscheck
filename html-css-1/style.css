@@ -13,11 +13,12 @@ body{
 header{
     background: gray;
     width: 600px;
-    height: 50px;
+    height: 40px;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items; center;
+
 
     
 }
@@ -26,13 +27,20 @@ nav {
     width: 150px;
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
+    font-size: 12px;
+    font-family: sans-serif;
     margin: 15px 15px 0 0;
 }
 
 .logo{
-    margin: 10px;
-    font-size: 25px;
+    /* margin: 6px; */
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 20px;
+
 }
 
 
@@ -50,7 +58,7 @@ a {
 
 .section1{
     width: 600px;
-    height: 175px;
+    height: 200px;
     color: yellow;
     font-size: 40px;
     display: flex;
@@ -64,7 +72,7 @@ a {
 .section2{
     border: white 2px solid;
         width: 600px;
-        height: 175px;
+        height: 160px;
         background: white;
         display: flex;
         justify-content: space-around;
@@ -73,29 +81,65 @@ a {
 }
 
 .innerSection2{
-    height: 150px;
-    width: 150px;
-    background: paleturquoise;
+    height: 135px;
+    width: 135px;
+    background: rgb(141, 236, 208);
+    border-radius: 15px;
 }
 
 .section3{
     border: white 2px solid;
         width: 600px;
-        height: 175px;
+        height: 160px;
         background: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
 
 }
+
+.innerSection3{
+    height: 135px;
+    width: 250px;
+    background: rgb(243, 200, 121);
+}
+
 
 .section4{
     border: white 2px solid;
         width: 600px;
-        height: 150px;
+        height: 120px;
         background: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
 }
 
+.innerSection4a{
+    height: 120px;
+    width: 200px;
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 8px;
+    padding: 10px;
+}
+
+.innerSection4{
+    height: 120px;
+    width: 250px;
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+}
+
 .section5{
-    border: white 2px solid;
         width: 600px;
         height: 50px;
+        background: rgb(68, 91, 116);
 }
