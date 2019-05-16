@@ -51,11 +51,12 @@ let homeTown = me.homeTown;
 
 // CODE HERE
 function setColor(arr){
-    arr = arr.splice(0, 3)
-  for(let i = 0; i < arr.length-1; i++){
+    arr = arr.splice(0,3)
+  for(let i = 0; i < arr.length; i++){
     if(arr[i] === 'blue'){
       arr[i] = '#4D4FF'
-    }
+    console.log(arr[i])
+    }return arr
   }background(arr[0], arr[1], arr[2])
  }
 //////////////////Step 5////////////////////
@@ -63,7 +64,7 @@ function setColor(arr){
 
 // CODE HERE
 function setPowers(arr){
-    for(let i = 0; i < arr.length-1; i++){
+    for(let i = 0; i < arr.length; i++){
         createLi(arr[i])
     }
 }
